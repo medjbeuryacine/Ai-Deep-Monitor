@@ -1,0 +1,14 @@
+streams:
+  youtube: "ffmpeg:rtsp://192.168.1.153:8554/youtube"
+  detection: "ffmpeg:rtsp://192.168.1.153:8554/detection"
+  webcam: "ffmpeg: -f v4l2 -input_format mjpeg -video_size 1280x720 -i /dev/video0 -c:v copy -f rtsp rtsp://192.168.1.153:8554/webcam"
+
+rtsp:
+  listen: ":8554"
+  protocols: [tcp, udp]
+
+webrtc:
+  listen: ":8555"
+
+api:
+  listen: ":1984"

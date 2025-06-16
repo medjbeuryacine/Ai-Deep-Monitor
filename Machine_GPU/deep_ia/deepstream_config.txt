@@ -1,0 +1,23 @@
+[property]
+gpu-id=0
+net-scale-factor=1.0
+
+
+onnx-file=/home/deep01/deep_ia/peoplenet_vpruned_quantized_decrypted_v2.3.4/resnet34_peoplenet_int8.onnx
+model-engine-file=/home/deep01/deep_ia/peoplenet_vpruned_quantized_decrypted_v2.3.4/resnet34_peoplenet_int8.onnx_b1_gpu0_fp16.engine
+labelfile-path=/home/deep01/deep_ia/peoplenet_vpruned_quantized_decrypted_v2.3.4/labels.txt
+batch-size=1
+process-mode=1
+network-mode=2  # FP16
+num-detected-classes=3  # Person, bag, face
+interval=0
+gie-unique-id=1
+cluster-mode=2  # NMS Clustering
+input-object-min-width=30
+input-object-min-height=30
+output-tensor-meta=1
+
+[class-attrs-all]
+topk=20
+nms-iou-threshold=0.5
+pre-cluster-threshold=0.2

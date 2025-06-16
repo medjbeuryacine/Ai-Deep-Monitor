@@ -1,0 +1,37 @@
+version: "3.8"
+
+services:
+  go2rtc:
+    image: alexxit/go2rtc:latest
+    volumes:
+      - ./go2rtc/config.yml:/app/config.yml:ro
+    # NB: on retire le lancement par défaut de l'image et on
+    #    passe explicitement --config
+    command: ["go2rtc", "--config", "/app/config.yml"]
+    ports:
+      - "1984:1984"   # HTTP API + signalisation WebSocket
+      - "8555:8555"   # WebRTC / ICE
+    restart: unless-stopped
+
+
+  detector:
+    build:
+      context: ./detector
+      dockerfile: Dockerfile
+    # utilise le GPU ou ... selon ta config
+    ports:
+      - "8000:8000"   # REST + WS détection
+    depends_on:
+      - go2rtc
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"     # Nginx qui sert ta SPA React
+    depends_on:
+      - detector
+      - go2rtc
+    restart: unless-stopped

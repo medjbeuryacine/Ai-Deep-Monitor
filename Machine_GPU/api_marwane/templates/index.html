@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Suivi des Entrées et Sorties</title>
+    <style>
+        img {
+            width: 48%;
+            border: 1px solid #ccc;
+        }
+        .compteur {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Suivi en direct</h1>
+
+    <div>
+        <img src="/tracking_entree" alt="Flux Entrée">
+        <img src="/tracking_sortie" alt="Flux Sortie">
+    </div>
+
+    <div class="compteur">
+        <p>Entrées : {{ entrances }}</p>
+        <p>Sorties : {{ sorties }}</p>
+        <p>Personnes à l’intérieur : {{ current }}</p>
+    </div>
+</body>
+</html>

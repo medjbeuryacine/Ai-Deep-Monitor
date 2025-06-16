@@ -1,0 +1,19 @@
+name: "yolov8n"
+backend: "onnxruntime"
+max_batch_size: 0  # Désactiver le batching pour éviter une dimension supplémentaire
+
+input [
+  {
+    name: "images"
+    data_type: TYPE_FP32
+    dims: [3, 640, 640]  # Correspond exactement au modèle ONNX exporté
+  }
+]
+
+output [
+  {
+    name: "output"
+    data_type: TYPE_FP32
+    dims: [84, 8400]  # Vérifie cette valeur avec ton modèle ONNX
+  }
+]

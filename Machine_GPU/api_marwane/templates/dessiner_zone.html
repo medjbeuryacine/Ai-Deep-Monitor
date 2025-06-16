@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Dessiner la zone</title>
+    <script src="/static/draw.js" defer></script>
+    <style>
+        canvas {
+            border: 2px solid #333;
+            cursor: crosshair;
+        }
+        #btns {
+            margin-top: 1rem;
+        }
+        #coord-list {
+            margin-top: 1rem;
+            font-family: monospace;
+            color: #333;
+            background: #f9f9f9;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+<h1>Dessiner la zone pour : {{ video_name }}</h1>
+
+<form method="get" action="/dessiner-zone">
+    <label for="video">🎥 Choisir une vidéo :</label>
+    <select name="video" id="video" onchange="this.form.submit()">
+        {% for v in video_list %}
+        <option value="{{ v }}" {% if v == video_name %}selected{% endif %}>{{ v }}</option>
+        {% endfor %}
+    </select>
+</form>
+
+<canvas id="canvas"></canvas>
+
+<div id="btns">
+    <button type="button" onclick="undoLastPoint()">↩️ Annuler le dernier point</button>
+    <button type="button" onclick="resetCanvas()">🧹 Réinitialiser</button>
+    <button type="button" onclick="sauverZone()">💾 Sauvegarder la zone</button>
+</div>
+
+<div id="coord-list"></div>
+
+<form id="zoneForm" method="post" action="/sauver-zone" style="display: none">
+    <input type="hidden" name="points" id="pointsInput">
+    <input type="hidden" name="video_name" value="{{ video_name }}">
+</form>
+
+<script>
+    const imageData = "data:image/jpeg;base64,{{ frame_data }}";
+    {% if zone_points %}
+    const existingPoints = {{ zone_points|tojson }};
+    {% endif %}
+</script>
+
+<hr>
+<p><a href="/">⬅️ Retour à l'accueil</a></p>
+</body>
+</html>

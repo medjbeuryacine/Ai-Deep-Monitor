@@ -1,0 +1,183 @@
+2025-05-03 20:35:27,887 - INFO - Entrée (disparition_bas): ID 4 à 2025-05-03T20:35:27.886235
+2025-05-03 20:35:54,956 - INFO - Entrée (disparition_bas): ID 2 à 2025-05-03T20:35:54.955409
+2025-05-03 20:36:04,290 - INFO - Entrée (disparition_bas): ID 1 à 2025-05-03T20:36:04.288995
+2025-05-03 20:36:18,515 - INFO - Entrée (ligne): ID 5 à 2025-05-03T20:36:18.514651
+2025-05-03 20:36:33,697 - INFO - Entrée (disparition_bas): ID 6 à 2025-05-03T20:36:33.696349
+2025-05-03 20:36:47,975 - INFO - Entrée (ligne): ID 10 à 2025-05-03T20:36:47.973764
+2025-05-03 20:36:49,456 - INFO - Entrée (disparition_bas): ID 16 à 2025-05-03T20:36:49.454884
+2025-05-03 20:36:59,258 - INFO - Entrée (ligne): ID 18 à 2025-05-03T20:36:59.257732
+2025-05-03 20:37:03,802 - INFO - Entrée (ligne): ID 20 à 2025-05-03T20:37:03.801608
+2025-05-03 20:37:18,792 - INFO - Entrée (disparition_bas): ID 25 à 2025-05-03T20:37:18.791654
+2025-05-03 20:37:28,641 - INFO - Entrée (ligne): ID 29 à 2025-05-03T20:37:28.640860
+2025-05-03 20:37:33,193 - INFO - Entrée (ligne): ID 31 à 2025-05-03T20:37:33.192612
+2025-05-03 20:37:41,793 - INFO - Entrée (disparition_bas): ID 33 à 2025-05-03T20:37:41.792008
+2025-05-03 20:37:46,980 - INFO - Entrée (ligne): ID 35 à 2025-05-03T20:37:46.979475
+2025-05-03 20:37:53,638 - INFO - Entrée (ligne): ID 38 à 2025-05-03T20:37:53.636855
+2025-05-03 20:38:11,371 - INFO - Entrée (disparition_bas): ID 42 à 2025-05-03T20:38:11.369589
+2025-05-03 20:38:16,637 - INFO - Entrée (ligne): ID 44 à 2025-05-03T20:38:16.636052
+2025-05-03 20:38:23,275 - INFO - Entrée (ligne): ID 50 à 2025-05-03T20:38:23.274351
+2025-05-03 20:38:25,399 - INFO - Entrée (ligne): ID 51 à 2025-05-03T20:38:25.398189
+2025-05-03 20:38:26,330 - INFO - Entrée (disparition_bas): ID 53 à 2025-05-03T20:38:26.328782
+2025-05-03 20:38:57,517 - INFO - Entrée (disparition_bas): ID 3 à 2025-05-03T20:38:57.514547
+2025-05-03 20:38:58,998 - INFO - Entrée (ligne): ID 1 à 2025-05-03T20:38:58.996135
+2025-05-03 20:39:00,333 - INFO - Entrée (disparition_bas): ID 4 à 2025-05-03T20:39:00.331526
+2025-05-03 20:39:17,078 - INFO - Entrée (disparition_bas): ID 10 à 2025-05-03T20:39:17.075704
+2025-05-03 20:39:28,804 - INFO - Entrée (ligne): ID 13 à 2025-05-03T20:39:28.801349
+2025-05-03 20:39:37,373 - INFO - Entrée (disparition_bas): ID 22 à 2025-05-03T20:39:37.368722
+2025-05-03 20:39:37,982 - INFO - Entrée (ligne): ID 21 à 2025-05-03T20:39:37.980549
+2025-05-03 20:40:07,702 - INFO - Entrée (ligne): ID 29 à 2025-05-03T20:40:07.700536
+2025-05-03 20:40:09,113 - INFO - Entrée (ligne): ID 32 à 2025-05-03T20:40:09.111466
+2025-05-03 20:40:15,879 - INFO - Entrée (ligne): ID 36 à 2025-05-03T20:40:15.877181
+2025-05-03 20:40:29,783 - INFO - Entrée (ligne): ID 40 à 2025-05-03T20:40:29.781157
+2025-05-03 20:40:31,364 - INFO - Entrée (ligne): ID 41 à 2025-05-03T20:40:31.362957
+2025-05-03 20:41:09,843 - ERROR - Erreur dans generate_frames_entree: name 'results' is not defined
+2025-05-03 20:41:18,522 - ERROR - Erreur dans generate_frames_entree: name 'results' is not defined
+2025-05-03 20:42:17,291 - ERROR - Erreur dans generate_frames_entree: name 'results' is not defined
+2025-05-03 20:42:27,813 - ERROR - Erreur dans generate_frames_entree: name 'results' is not defined
+2025-05-03 20:49:45,425 - INFO - Entrée (trajectoire): ID 1 à 2025-05-03T20:49:45.424796
+2025-05-03 20:49:51,740 - INFO - Entrée (trajectoire): ID 2 à 2025-05-03T20:49:51.739906
+2025-05-03 20:50:06,583 - INFO - Entrée (trajectoire): ID 3 à 2025-05-03T20:50:06.582836
+2025-05-03 20:50:19,858 - INFO - Entrée (trajectoire): ID 5 à 2025-05-03T20:50:19.857797
+2025-05-03 20:50:25,015 - INFO - Entrée (trajectoire): ID 7 à 2025-05-03T20:50:25.014727
+2025-05-03 20:50:28,889 - INFO - Entrée (trajectoire): ID 8 à 2025-05-03T20:50:28.888457
+2025-05-03 20:50:33,679 - INFO - Entrée (trajectoire): ID 9 à 2025-05-03T20:50:33.678864
+2025-05-03 20:50:34,688 - INFO - Entrée (trajectoire): ID 10 à 2025-05-03T20:50:34.687496
+2025-05-03 20:50:51,622 - INFO - Entrée (trajectoire): ID 13 à 2025-05-03T20:50:51.621179
+2025-05-03 20:50:54,937 - INFO - Entrée (trajectoire): ID 14 à 2025-05-03T20:50:54.936523
+2025-05-03 20:50:59,971 - INFO - Entrée (trajectoire): ID 16 à 2025-05-03T20:50:59.970170
+2025-05-03 20:51:12,209 - INFO - Entrée (trajectoire): ID 19 à 2025-05-03T20:51:12.208031
+2025-05-03 20:51:16,997 - INFO - Entrée (trajectoire): ID 21 à 2025-05-03T20:51:16.996820
+2025-05-03 20:51:18,876 - INFO - Entrée (trajectoire): ID 22 à 2025-05-03T20:51:18.874879
+2025-05-03 20:51:23,485 - INFO - Entrée (trajectoire): ID 23 à 2025-05-03T20:51:23.484317
+2025-05-03 20:51:24,566 - INFO - Entrée (trajectoire): ID 24 à 2025-05-03T20:51:24.565899
+2025-05-03 20:51:33,116 - INFO - Entrée (trajectoire): ID 26 à 2025-05-03T20:51:33.114806
+2025-05-03 20:51:37,772 - INFO - Entrée (trajectoire): ID 27 à 2025-05-03T20:51:37.771567
+2025-05-03 20:51:43,257 - INFO - Entrée (trajectoire): ID 30 à 2025-05-03T20:51:43.256258
+2025-05-03 20:51:48,250 - INFO - Entrée (trajectoire): ID 31 à 2025-05-03T20:51:48.249173
+2025-05-03 20:51:52,772 - INFO - Entrée (trajectoire): ID 32 à 2025-05-03T20:51:52.770327
+2025-05-03 20:51:58,060 - INFO - Entrée (trajectoire): ID 33 à 2025-05-03T20:51:58.059228
+2025-05-03 20:52:02,181 - INFO - Entrée (trajectoire): ID 34 à 2025-05-03T20:52:02.180229
+2025-05-03 20:52:25,257 - INFO - Entrée (trajectoire): ID 36 à 2025-05-03T20:52:25.255470
+2025-05-03 20:52:27,339 - INFO - Entrée (trajectoire): ID 37 à 2025-05-03T20:52:27.338178
+2025-05-03 20:52:28,453 - INFO - Entrée (trajectoire): ID 39 à 2025-05-03T20:52:28.452808
+2025-05-03 20:52:35,120 - INFO - Entrée (trajectoire): ID 43 à 2025-05-03T20:52:35.118976
+2025-05-03 20:52:35,933 - INFO - Entrée (trajectoire): ID 40 à 2025-05-03T20:52:35.932309
+2025-05-03 20:52:49,358 - INFO - Entrée (trajectoire): ID 45 à 2025-05-03T20:52:49.356927
+2025-05-03 20:52:52,011 - INFO - Entrée (trajectoire): ID 46 à 2025-05-03T20:52:52.010190
+2025-05-03 20:52:55,100 - INFO - Entrée (trajectoire): ID 49 à 2025-05-03T20:52:55.098901
+2025-05-03 21:43:21,736 - INFO - Traitement de la vidéo video_passage/camera_entree_lumi_normal.mp4 démarré (sans affichage)
+2025-05-03 21:43:21,736 - INFO - Dimensions: 632x476, Ligne Y: 380
+2025-05-03 21:43:24,766 - INFO - Frame 100: Entrées: 0, Présentes: 0
+2025-05-03 21:43:24,767 - INFO - FPS: 52.3
+2025-05-03 21:43:25,726 - INFO - Frame 200: Entrées: 0, Présentes: 0
+2025-05-03 21:43:25,726 - INFO - FPS: 50.4
+2025-05-03 21:43:26,676 - INFO - Frame 300: Entrées: 0, Présentes: 0
+2025-05-03 21:43:26,676 - INFO - FPS: 51.9
+2025-05-03 21:43:27,624 - INFO - Frame 400: Entrées: 0, Présentes: 0
+2025-05-03 21:43:27,624 - INFO - FPS: 51.3
+2025-05-03 21:43:28,511 - INFO - Entrée (disparition_bas): ID 1 à 2025-05-03T21:43:28.511247
+2025-05-03 21:43:28,824 - INFO - Frame 500: Entrées: 1, Présentes: 1
+2025-05-03 21:43:28,824 - INFO - FPS: 50.8
+2025-05-03 21:43:29,775 - INFO - Frame 600: Entrées: 1, Présentes: 1
+2025-05-03 21:43:29,775 - INFO - FPS: 52.4
+2025-05-03 21:43:30,734 - INFO - Frame 700: Entrées: 1, Présentes: 1
+2025-05-03 21:43:30,735 - INFO - FPS: 50.4
+2025-05-03 21:43:32,008 - INFO - Frame 800: Entrées: 1, Présentes: 1
+2025-05-03 21:43:32,008 - INFO - FPS: 35.4
+2025-05-03 21:43:33,135 - INFO - Frame 900: Entrées: 1, Présentes: 1
+2025-05-03 21:43:33,135 - INFO - FPS: 51.4
+2025-05-03 21:43:34,312 - INFO - Frame 1000: Entrées: 1, Présentes: 1
+2025-05-03 21:43:34,312 - INFO - FPS: 34.2
+2025-05-03 21:43:35,758 - INFO - Frame 1100: Entrées: 1, Présentes: 1
+2025-05-03 21:43:35,759 - INFO - FPS: 37.4
+2025-05-03 21:43:37,166 - INFO - Frame 1200: Entrées: 1, Présentes: 1
+2025-05-03 21:43:37,166 - INFO - FPS: 34.3
+2025-05-03 21:43:37,695 - INFO - Entrée (disparition_bas): ID 2 à 2025-05-03T21:43:37.694887
+2025-05-03 21:43:38,530 - INFO - Frame 1300: Entrées: 2, Présentes: 2
+2025-05-03 21:43:38,530 - INFO - FPS: 36.1
+2025-05-03 21:43:39,597 - INFO - Frame 1400: Entrées: 2, Présentes: 2
+2025-05-03 21:43:39,597 - INFO - FPS: 51.4
+2025-05-03 21:43:40,906 - INFO - Frame 1500: Entrées: 2, Présentes: 2
+2025-05-03 21:43:40,906 - INFO - FPS: 37.2
+2025-05-03 21:43:41,064 - INFO - Entrée (ligne): ID 3 à 2025-05-03T21:43:41.064115
+2025-05-03 21:43:41,931 - INFO - Frame 1600: Entrées: 3, Présentes: 3
+2025-05-03 21:43:41,931 - INFO - FPS: 50.4
+2025-05-03 21:43:42,890 - INFO - Frame 1700: Entrées: 3, Présentes: 3
+2025-05-03 21:43:42,890 - INFO - FPS: 50.4
+2025-05-03 21:43:43,930 - INFO - Frame 1800: Entrées: 3, Présentes: 3
+2025-05-03 21:43:43,930 - INFO - FPS: 35.4
+2025-05-03 21:43:45,033 - INFO - Frame 1900: Entrées: 3, Présentes: 3
+2025-05-03 21:43:45,033 - INFO - FPS: 50.3
+2025-05-03 21:43:45,993 - INFO - Frame 2000: Entrées: 3, Présentes: 3
+2025-05-03 21:43:45,994 - INFO - FPS: 52.3
+2025-05-03 21:43:47,307 - INFO - Frame 2100: Entrées: 3, Présentes: 3
+2025-05-03 21:43:47,307 - INFO - FPS: 36.0
+2025-05-03 21:43:48,348 - INFO - Frame 2200: Entrées: 3, Présentes: 3
+2025-05-03 21:43:48,348 - INFO - FPS: 36.0
+2025-05-03 21:43:48,368 - INFO - Entrée (disparition_bas): ID 7 à 2025-05-03T21:43:48.368125
+2025-05-03 21:43:49,320 - INFO - Frame 2300: Entrées: 4, Présentes: 4
+2025-05-03 21:43:49,321 - INFO - FPS: 51.7
+2025-05-03 21:43:50,407 - INFO - Frame 2400: Entrées: 4, Présentes: 4
+2025-05-03 21:43:50,407 - INFO - FPS: 33.0
+2025-05-03 21:43:50,541 - INFO - Entrée (ligne): ID 8 à 2025-05-03T21:43:50.540953
+2025-05-03 21:43:51,668 - INFO - Entrée (ligne): ID 9 à 2025-05-03T21:43:51.667507
+2025-05-03 21:43:51,694 - INFO - Frame 2500: Entrées: 6, Présentes: 6
+2025-05-03 21:43:51,694 - INFO - FPS: 37.6
+2025-05-03 21:43:52,650 - INFO - Frame 2600: Entrées: 6, Présentes: 6
+2025-05-03 21:43:52,651 - INFO - FPS: 53.2
+2025-05-03 21:43:53,609 - INFO - Frame 2700: Entrées: 6, Présentes: 6
+2025-05-03 21:43:53,609 - INFO - FPS: 51.0
+2025-05-03 21:43:54,564 - INFO - Frame 2800: Entrées: 6, Présentes: 6
+2025-05-03 21:43:54,564 - INFO - FPS: 51.8
+2025-05-03 21:43:55,686 - INFO - Frame 2900: Entrées: 6, Présentes: 6
+2025-05-03 21:43:55,686 - INFO - FPS: 36.3
+2025-05-03 21:43:56,751 - INFO - Frame 3000: Entrées: 6, Présentes: 6
+2025-05-03 21:43:56,751 - INFO - FPS: 50.4
+2025-05-03 21:43:57,790 - INFO - Frame 3100: Entrées: 6, Présentes: 6
+2025-05-03 21:43:57,790 - INFO - FPS: 52.6
+2025-05-03 21:43:58,901 - INFO - Frame 3200: Entrées: 6, Présentes: 6
+2025-05-03 21:43:58,901 - INFO - FPS: 34.7
+2025-05-03 21:44:00,294 - INFO - Frame 3300: Entrées: 6, Présentes: 6
+2025-05-03 21:44:00,294 - INFO - FPS: 32.6
+2025-05-03 21:44:00,597 - INFO - Entrée (disparition_bas): ID 11 à 2025-05-03T21:44:00.596381
+2025-05-03 21:44:01,603 - INFO - Entrée (disparition_bas): ID 13 à 2025-05-03T21:44:01.602475
+2025-05-03 21:44:01,939 - INFO - Entrée (ligne): ID 12 à 2025-05-03T21:44:01.938659
+2025-05-03 21:44:01,939 - INFO - Frame 3400: Entrées: 9, Présentes: 9
+2025-05-03 21:44:01,939 - INFO - FPS: 36.9
+2025-05-03 21:44:03,118 - INFO - Frame 3500: Entrées: 9, Présentes: 9
+2025-05-03 21:44:03,118 - INFO - FPS: 35.7
+2025-05-03 21:44:03,523 - INFO - Entrée (ligne): ID 14 à 2025-05-03T21:44:03.523133
+2025-05-03 21:44:04,208 - INFO - Frame 3600: Entrées: 10, Présentes: 10
+2025-05-03 21:44:04,208 - INFO - FPS: 50.8
+2025-05-03 21:44:05,163 - INFO - Frame 3700: Entrées: 10, Présentes: 10
+2025-05-03 21:44:05,163 - INFO - FPS: 51.6
+2025-05-03 21:44:06,130 - INFO - Frame 3800: Entrées: 10, Présentes: 10
+2025-05-03 21:44:06,130 - INFO - FPS: 50.8
+2025-05-03 21:44:07,320 - INFO - Frame 3900: Entrées: 10, Présentes: 10
+2025-05-03 21:44:07,320 - INFO - FPS: 30.9
+2025-05-03 21:44:08,631 - INFO - Frame 4000: Entrées: 10, Présentes: 10
+2025-05-03 21:44:08,631 - INFO - FPS: 52.6
+2025-05-03 21:44:09,591 - INFO - Frame 4100: Entrées: 10, Présentes: 10
+2025-05-03 21:44:09,591 - INFO - FPS: 39.5
+2025-05-03 21:44:10,959 - INFO - Frame 4200: Entrées: 10, Présentes: 10
+2025-05-03 21:44:10,959 - INFO - FPS: 26.7
+2025-05-03 21:44:11,054 - INFO - Entrée (disparition_bas): ID 19 à 2025-05-03T21:44:11.053673
+2025-05-03 21:44:11,277 - INFO - Entrée (disparition_bas): ID 21 à 2025-05-03T21:44:11.277183
+2025-05-03 21:44:12,049 - INFO - Frame 4300: Entrées: 12, Présentes: 12
+2025-05-03 21:44:12,049 - INFO - FPS: 52.6
+2025-05-03 21:44:13,412 - INFO - Frame 4400: Entrées: 12, Présentes: 12
+2025-05-03 21:44:13,412 - INFO - FPS: 25.9
+2025-05-03 21:44:14,788 - INFO - Frame 4500: Entrées: 12, Présentes: 12
+2025-05-03 21:44:14,788 - INFO - FPS: 35.7
+2025-05-03 21:44:16,304 - INFO - Frame 4600: Entrées: 12, Présentes: 12
+2025-05-03 21:44:16,305 - INFO - FPS: 32.5
+2025-05-03 21:44:17,753 - INFO - Frame 4700: Entrées: 12, Présentes: 12
+2025-05-03 21:44:17,753 - INFO - FPS: 32.3
+2025-05-03 21:44:18,152 - INFO - Entrée (disparition_bas): ID 22 à 2025-05-03T21:44:18.151750
+2025-05-03 21:44:18,947 - INFO - Frame 4800: Entrées: 13, Présentes: 13
+2025-05-03 21:44:18,947 - INFO - FPS: 51.3
+2025-05-03 21:44:19,919 - INFO - Frame 4900: Entrées: 13, Présentes: 13
+2025-05-03 21:44:19,919 - INFO - FPS: 50.0
+2025-05-03 21:45:21,745 - INFO - ✅ Compteur réinitialisé.
+2025-05-03 21:45:21,745 - INFO - 🚀 API YOLO Entrée/Sortie démarrée sur http://127.0.0.1:8000
+2025-05-03 21:46:38,994 - INFO - 🛑 API arrêtée, ressources libérées.

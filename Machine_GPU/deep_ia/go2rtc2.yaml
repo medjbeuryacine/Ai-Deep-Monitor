@@ -1,0 +1,19 @@
+streams:
+  webcam: "ffmpeg:-f v4l2 -input_format mjpeg -video_size 1280x720 -i /dev/video0 -c:v copy -f rtsp rtsp://192.168.1.153:8554/webcam"
+  youtube: "ffmpeg:rtsp://192.168.1.153:8554/youtube?buffer=1000"  # Ajout buffer=1000ms
+  youtubelive: "ffmpeg:rtsp://192.168.1.153:8554/youtubelive?buffer=500"  # Moins de buffer pour les lives
+  detection: "ffmpeg:rtsp://192.168.1.153:8554/detection"
+  camera_ip: "rtsp://root:demo1234@192.168.1.155/live1s1.sdp"
+
+rtsp:
+  listen: ":8556"      # Serveur RTSP écoutant sur le port 8554 sur toutes les interfaces
+  protocols: [tcp, udp]     # Autorise les connexions TCP et UDP
+  default_query: "video"  # Transmission de la première piste vidéo et audio
+
+webrtc:
+  listen: ":8557"           # Serveur WebRTC sur le port 8555
+
+api:
+  listen: ":1985"           # Serveur HTTP API sur le port 1984
+  static_dir: "www"         # Dossier pour les fichiers statiques (interface web)
+  origin: "*"               # Autorise les requêtes CORS depuis n'importe quelle origine
