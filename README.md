@@ -42,11 +42,9 @@ AI-Deep Monitor est une application web de surveillance vidéo intelligente bas�
 - **Socket.IO** - Communication temps réel
 
 ### Backend
-- **Node.js** - Environnement d'exécution JavaScript
-- **Express** - Framework web pour API RESTful
-- **Socket.IO** - Communication bidirectionnelle temps réel
-- **Multer** - Gestion des téléchargements de fichiers
-- **Swagger** - Documentation automatique des API
+- **FastAPI** - Framework web moderne et performant pour Python
+- **Uvicorn** - Serveur ASGI haute performance
+- **Pydantic** - Validation et sérialisation des données
 
 ### Base de Données
 - **MySQL** - Système de gestion de base de données relationnelle
@@ -58,6 +56,7 @@ AI-Deep Monitor est une application web de surveillance vidéo intelligente bas�
 - **HLS** - Diffusion des flux vers l'interface web
 - **FFmpeg** - Conversion et traitement vidéo
 - **Modèles YOLO** - Détection d'objets et personnes
+- **OpenCV** - Traitement d'images et vidéo
 
 ### Déploiement
 - **Docker** - Containerisation de l'application
@@ -97,7 +96,7 @@ AI-Deep-Monitor/
 
 1. **Cloner le repository**
 ```bash
-git clone <repository-url>
+git clone AI-Deep-Monitor
 cd AI-Deep-Monitor
 ```
 
