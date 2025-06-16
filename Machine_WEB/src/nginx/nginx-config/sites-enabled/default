@@ -1,0 +1,54 @@
+server {
+    listen 80;
+    server_name 192.168.1.150;  # Remplacez par votre IP locale ou nom de domaine
+
+    # Proxy les requêtes vers React (qui tourne sur 5173)
+    location / {
+        proxy_pass http://127.0.0.1:5173;  # Redirige vers le serveur de développement React
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+
+        # Ajouter des délais d'attente pour React
+        proxy_connect_timeout 600s;  # Délai pour établir la connexion avec React
+        proxy_read_timeout 600s;     # Délai pour recevoir la réponse de React
+        proxy_send_timeout 600s;     # Délai pour envoyer des requêtes à React
+    }
+
+    # Gérer les requêtes API vers FastAPI
+    location /api/ {
+        proxy_pass http://127.0.0.1:8000;  # Redirige vers FastAPI sur le port 8000
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+
+        # Ajouter des délais d'attente pour FastAPI
+        proxy_connect_timeout 600s;  # Délai pour établir la connexion avec FastAPI
+        proxy_read_timeout 600s;     # Délai pour recevoir la réponse de FastAPI
+        proxy_send_timeout 600s;     # Délai pour envoyer des requêtes à FastAPI
+    }
+
+    # Assurez-vous que /openapi.json et d'autres ressources sont accessibles
+    location /openapi.json {
+        proxy_pass http://127.0.0.1:8000/openapi.json;
+        proxy_set_header Host $host;
+    }
+
+
+    # Serve the custom error pages
+    location = /custom_404.html {
+        root /var/www/html;
+    }
+
+    location = /custom_50x.html {
+        root /var/www/html;
+    }
+
+    # Autres configurations utiles
+    client_max_body_size 10M;  # Limite la taille des fichiers téléchargés (par exemple pour les images ou les fichiers)
+    gzip on;                   # Active la compression gzip
+    gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript;
+    gzip_min_length 256;       # Compression gzip pour les réponses de taille > 256 octets
+}

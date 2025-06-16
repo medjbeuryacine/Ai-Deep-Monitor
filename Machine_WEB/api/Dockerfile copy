@@ -1,0 +1,31 @@
+FROM python:3.10-slim
+
+WORKDIR /usr/src/app
+
+# Installation des dépendances système
+RUN apt-get update && apt-get install -y \
+    snmp \
+    libsnmp-dev \
+    netcat-openbsd \
+    libgl1-mesa-glx \
+    libglib2.0-0 \
+    libsm6 \
+    libxext6 \
+    libxrender-dev \
+    ffmpeg \  
+    && rm -rf /var/lib/apt/lists/*
+
+# Installation des dépendances Python (en deux étapes pour mieux gérer le cache)
+COPY requirements.txt .
+RUN pip install --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt
+
+# Copie des fichiers
+COPY . .
+
+# Script d'entrée
+COPY docker-entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+EXPOSE 8000
+ENTRYPOINT ["/entrypoint.sh"]

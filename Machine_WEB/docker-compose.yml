@@ -1,0 +1,108 @@
+services:
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./hls_output:/var/www/hls
+      - ./uploads:/app/uploads
+    depends_on:
+      - react
+      - api
+      - phpmyadmin
+    networks:
+      - app_network
+
+  react:
+    build:
+      context: ./react-app
+    container_name: react
+    restart: unless-stopped
+    ports:
+      - "5173:5173"
+    command: ["npm", "run", "dev", "--host"]
+    volumes:
+      - ./react-app:/usr/src/app
+      - react_node_modules:/usr/src/app/node_modules
+    stdin_open: true
+    networks:
+      - app_network
+
+  api:
+    build:
+      context: ./api
+    container_name: api
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+      # - "8050:8050"  # Ajoutez cette ligne pour le port WebSocket
+    environment:
+      - DATABASE_URL=mysql+pymysql://user:password@mysql:3306/loginsecure
+      - JWT_SECRET_KEY=my_super_secret_jwt_key
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    volumes:
+      - ./hls_output:/var/www/hls   # Ajoutez cette ligne
+      - ./api:/usr/src/app
+      - ./api/static:/usr/src/app/static
+      - ./uploads:/app/uploads  # Ajoutez cette ligne
+    devices:
+      - "/dev/video0:/dev/video0"
+    privileged: true
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - app_network
+    depends_on:
+      mysql:
+        condition: service_healthy
+
+  mysql:
+    image: mysql:8.3
+    container_name: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: loginsecure
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mysql_data:/var/lib/mysql  # Utilisation du volume nommé
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-uuser", "-ppassword"]
+      interval: 10s
+      timeout: 10s
+      retries: 10
+    networks:
+      - app_network
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    restart: always
+    ports:
+      - "8080:80"
+    environment:
+      PMA_HOST: mysql
+      MYSQL_ROOT_PASSWORD: rootpassword
+      APACHE_ALIAS: /phpmyadmin
+
+    depends_on:
+      - mysql
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    driver: bridge
+
+volumes:
+  react_node_modules:
+  mysql_data:
+
+
+
