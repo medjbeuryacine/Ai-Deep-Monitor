@@ -1,4 +1,4 @@
-# # AI-Deep Monitor
+# AI-Deep Monitor
 
 ## 📋 Description
 
