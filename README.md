@@ -236,6 +236,6 @@ FRONTEND_PORT=3000
 - **Commerces** - Analyse de fréquentation et sécurité
 - **Infrastructures critiques** - Protection et monitoring avancé
 
-## 🎥 Démo locale
+## 🎥 Démonstration Vidéo
 
-Téléchargez et lisez la [vidéo de démonstration](Video_Web_Site/Video.mkv) localement.
+[▶️ Voir la vidéo de démonstration sur Google Drive](https://drive.google.com/file/d/1hLU_M4g2-2S-217lvHXoC9FFFFlzDuJd/view?usp=drive_link)
