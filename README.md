@@ -235,3 +235,7 @@ FRONTEND_PORT=3000
 - **Entrepôts** - Sécurité et suivi des mouvements
 - **Commerces** - Analyse de fréquentation et sécurité
 - **Infrastructures critiques** - Protection et monitoring avancé
+
+## 🎥 Démo locale
+
+Téléchargez et lisez la [vidéo de démonstration](Video_Web_Site/Video.mkv) localement.
